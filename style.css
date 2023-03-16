@@ -1,7 +1,7 @@
 .container{
     display:grid;
     border:1px solid red;
-    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 10fr 1fr;
     height:100vh;
     
@@ -9,10 +9,23 @@
 }
 .sidebar{
     grid-column: 1;
-    grid-row: 1 / 3;
+    grid-row: 1 /  4;
+
+    font-size:larger;
+    
     
     background-color: lightblue;
     color: white;
+}
+
+.dashboard{
+    display:flex;
+    flex-grow:1;
+    height:100%;
+    justify-content: center;
+    
+    flex-direction:column;
+    align-items: center;
 }
 
 .header-content{
