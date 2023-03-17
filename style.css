@@ -22,11 +22,22 @@
     display:flex;
     flex-grow:1;
     height:100%;
-    justify-content: center;
+    justify-content: space-around;
     
     flex-direction:column;
     align-items: center;
 }
+
+
+.menu{
+    display:flex;
+    
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+
+}
+
 
 .header-content{
     border: 2px solid black;
@@ -38,4 +49,22 @@
     grid-column: 2;
     grid-row: 2;
     border: 3px solid red;
+}
+
+li{
+    list-style-type:none;
+    padding:10px;
+}
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color:none;
+}
+a:visited{
+    color:white;
+}
+a:active{
+    color:none;
 }
