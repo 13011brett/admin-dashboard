@@ -14,7 +14,7 @@
     font-size:larger;
     
     
-    background-color: lightblue;
+    background-color:cornflowerblue;
     color: white;
 }
 
@@ -25,15 +25,20 @@
     justify-content: space-around;
     
     flex-direction:column;
-    align-items: center;
+
 }
 
+.dash{
+    display:flex;
+    align-items: center;
+    
+}
 
 .menu{
     display:flex;
     
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-shrink: 1;
 
 }
@@ -53,11 +58,19 @@
 
 li{
     list-style-type:none;
+    padding:10px;  
+}
+i{
     padding:10px;
 }
 
 a{
     text-decoration: none;
+    box-shadow: inset 0 0 0 0 #153642;
+    color: #bdd7e0;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 a:link{
     color:none;
@@ -67,4 +80,8 @@ a:visited{
 }
 a:active{
     color:none;
+}
+a:hover{
+    box-shadow: inset 100px 0 0 0 #123d4d;
+    color: white;
 }
