@@ -2,7 +2,7 @@
     display:grid;
     border:1px solid red;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 10fr;
     height:100vh;
     
     
@@ -31,29 +31,46 @@
 .dash{
     display:flex;
     align-items: center;
-    
 }
 
 .menu{
     display:flex;
-    
+    flex-grow: 1;
+    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-around;
     flex-shrink: 1;
+    background-color:cornflowerblue;
 
 }
 
 
 .header-content{
-    border: 2px solid black;
+
     grid-column:2;
     grid-row: 1;
+    box-shadow: 0px 20px 30px -20px
+}
+
+.header-top{
+    display:grid;
+    grid-template-columns: .5fr 10fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    
 }
 
 .main-content{
+    background-color: rgb(202, 199, 199);
     grid-column: 2;
     grid-row: 2;
-    border: 3px solid red;
+    
+}
+
+input{
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 5px; 
 }
 
 li{
