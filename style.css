@@ -60,6 +60,21 @@
     
 }
 
+.header-bottom{
+    display:grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+.header-buttons{
+    display: flex;;
+    grid-row: 1;
+    justify-content: space-between;
+    padding: 10px;
+    grid-column: 3;
+    border:1px solid red;
+}
+
 .main-content{
     background-color: rgb(202, 199, 199);
     grid-column: 2;
@@ -89,6 +104,15 @@ a{
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
+button{
+    background-color: #3333d3ce;
+    color:white;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+
 a:link{
     color:none;
 }
