@@ -124,12 +124,19 @@
 
 .card-project{
     justify-self: center;
+    text-align: center;
     width:20vw;
     height:20vh;
     background-color: white;
     
     box-shadow: 0 4px 8px 10px rgba(0,0,0,0.10);
     transition: 0.3s;
+}
+
+.card_buttons{
+    display:flex;
+    justify-content: end;
+    padding:10px;
 }
 
 .card-announcement{
@@ -157,7 +164,7 @@ i{
     padding:10px;
 }
 
-a{
+.option_a{
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #153642;
     color: #bdd7e0;
@@ -166,25 +173,28 @@ a{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-button{
+.header_button{
     background-color: #3333d3ce;
     color:white;
     border-radius: 20%;
     width:15%;
     padding: 5px;
 }
+a{
+    text-decoration: none;
+}
 
 
-a:link{
+.option_a:link{
     color:none;
 }
-a:visited{
+.option_a:visited{
     color:white;
 }
-a:active{
+.option_a:active{
     color:none;
 }
-a:hover{
+.option_a:hover{
     box-shadow: inset 400px 0 0 0 #123d4d;
     color: white;
 }
