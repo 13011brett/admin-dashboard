@@ -89,8 +89,9 @@
     display:grid;
     text-align: center;
     padding:2%;
-    gap:0%;
+    gap:5%;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     
 }
 
@@ -123,10 +124,17 @@
 }
 
 .card-project{
+    display:flex;;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: 1px solid red;
     justify-self: center;
     text-align: center;
     width:20vw;
     height:20vh;
+    padding: 1em;
+    margin: 0 1em;
     background-color: white;
     
     box-shadow: 0 4px 8px 10px rgba(0,0,0,0.10);
@@ -136,7 +144,12 @@
 .card_buttons{
     display:flex;
     justify-content: end;
-    padding:10px;
+    
+}
+
+.card-clickies{
+    color:black;
+
 }
 
 .card-announcement{
