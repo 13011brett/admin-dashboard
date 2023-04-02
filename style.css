@@ -1,6 +1,9 @@
 body{
     margin:0;
 }
+*{
+    
+}
 
 .container{
     display:grid;
@@ -138,6 +141,19 @@ body{
     word-wrap: break-word;
     grid-row:2;
     grid-column: 2;
+}
+
+.profile-trending{
+    display:grid;
+    grid-template-columns: 1fr 10fr;
+    justify-items: flex-start;
+}
+.tester{
+    border:1px solid red;
+}
+
+.name_at{
+
 }
 
 .card-project{
